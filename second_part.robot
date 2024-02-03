@@ -1,6 +1,7 @@
 *** Settings ***
 Library    Browser    enable_presenter_mode=${True}
-Variables    ./Variables/sauce_demo_xpaths.yaml
+Resource    .${/}resources${/}login.resource
+Variables    .${/}Variables${/}sauce_demo_xpaths.yaml
 
 *** Variables ***
 ${USER}        standard_user
@@ -20,18 +21,6 @@ User Should Be Able To Order Products
     # [Teardown]    Close Browser
 
 *** Keywords ***
-Open Shop Webpage
-    New Browser        chromium    headless=false
-    New Page           https://www.saucedemo.com/
-    Get Title          ==    Swag Labs
-
-Login To Shop
-    [Arguments]                  ${username}           ${password}
-    Fill Text                    ${user name input}    ${username}
-    Fill Text                    ${password input}     ${password}
-    Click                        ${login button}
-    Wait For Elements State      ${main app logo}
-
 Check If Shopping Cart Is Empty
     Get Text    ${cart icon}   ==    ${EMPTY}
 
