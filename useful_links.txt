@@ -1,0 +1,12 @@
+Robot Framework organisation:       https://robotframework.org/
+Robot Framework User Guide:         https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html
+Built-in library:                   https://robotframework.org/robotframework/latest/libraries/BuiltIn.html
+
+Browser Library:                    https://robotframework-browser.org/
+NodeJS installation:                https://nodejs.org/en/download/
+
+Browser library keywords:           https://marketsquare.github.io/robotframework-browser/Browser.html
+
+Test WebShop:                       https://www.saucedemo.com/
+
+Tutorial GitHub project:            https://github.com/czyrski/robocon2024_unlocking_power
